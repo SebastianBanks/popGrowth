@@ -7,8 +7,10 @@ function nbYear(population, percent, newInhabit, final) {
         pop = Math.floor(pop + pop * growth + newInhabit)
         years += 1
     }
-    console.log(pop)
-    console.log(years)
+    console.log(`population: ${pop}`)
+    console.log(`years: ${years}`)
+    console.log("----------")
+    return years
 }
 
 nbYear(1000, 2, 50, 1200)
