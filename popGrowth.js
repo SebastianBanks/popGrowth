@@ -4,10 +4,10 @@ function nbYear(population, percent, newInhabit, final) {
     let years = 0
 
     while (pop < final) {
-        pop = pop + pop * growth + newInhabit
+        pop = Math.floor(pop + pop * growth + newInhabit)
         years += 1
     }
-    
+    console.log(pop)
     console.log(years)
 }
 
